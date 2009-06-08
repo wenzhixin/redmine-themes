@@ -1,6 +1,7 @@
-/* Modified Gazebo CLEAN stylesheet, based on "alternate" */
+/* Watersky theme stylesheet, based on "alternate" */
 
 @import url(../../../stylesheets/application.css);
+@import url(icons.css);
 
 body, #wrapper { background-color:#FFF; font-family: verdana, arial, helvetica, sans-serif; }
 
@@ -24,11 +25,6 @@ a:link, a:hover, a:active { color: #0F65BC; }
 #top-menu {   
 	background: #214B73 url(../images/top-back.png) repeat-x 0px 0px;
 }
-/*#top-menu .home {   
-	background: url(logo.gif) no-repeat 0px 0px;
-	padding-left: 25px;
-}
-*/
 
 #top-menu ul { padding: 0 0px; }
 #top-menu li, #top-menu #loggedas { color: #ddd; line-height: 21px; margin-right: 4px; }
@@ -52,11 +48,8 @@ a:link, a:hover, a:active { color: #0F65BC; }
 }
 
 #content > .contextual {
-	background: #EEE;
-	border: 1px solid #BBB;
-	border-bottom: 0px solid #BBB;
-	margin: 0px 0px -18px 0px;
 	padding: 5px 5px 5px 5px;
+	margin-top: -5px;
 }
 
 /* Headers */
@@ -73,19 +66,45 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 }
 
 #content > h2, .wiki > h1:first-child {
-	background: #EEE url(../images/header-back.png) repeat-x 0px 100%;
-	padding: 4px 4px 4px 7px;
-	margin: -6px -10px 0px -10px;
+	background: #F5F5F5 url(../images/header-back.png) repeat-x 0px 100%;
+	padding: 4px 4px 6px 7px;
+	margin: -6px -10px 4px -10px;
 	font-size: 14px; 
 	color: #000; 
 }
+
 .wiki h1 { font-family: verdana,arial,sans-serif; font-weight: bold;}
+
+p.breadcrumb {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #EEE;
+	font-size: 0.9em;
+	margin: -6px -10px 6px;
+	padding: 6px;
+}
+
+div.flash, .nodata {
+	border: 1px solid;
+}
+
+.nodata, .warning {
+	background-color: #FFF0D6;
+	border-color: #EADCC5;
+}
 
 #content > div.flash {
 	margin: -6px -10px 6px -10px;
 	border: 0px solid #FFF;
+}
+
+#content > div.notice {
 	border-bottom: 1px solid #9FCF9F;
 }
+
+#content > div.error {
+	border-bottom: 1px solid #DD9999;
+}
+
 
 /* Menu */
 #main-menu { margin: 0 0px; 
@@ -104,7 +123,6 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 #main-menu li a:active,
 #main-menu li a.selected,
 #main-menu li a.selected:hover {
-	background-image: url(../images/icons/page.png);
 	background-position: 2px 60%;
 	background-repeat: no-repeat;
 	padding-left: 22px;
@@ -129,27 +147,23 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 	border: 1px solid #4E6F8E;
 }
 
-/* Icons for menu tabs */
-#main-menu li a.overview,  #main-menu li a.overview:hover  { background-image: url(../images/icons/house.png); }
-#main-menu li a.activity,  #main-menu li a.activity:hover  { background-image: url(../images/icons/lightning.png); }
-#main-menu li a.issues,    #main-menu li a.issues:hover    { background-image: url(../images/icons/bug.png) }
-#main-menu li a.new-issue, #main-menu li a.new-issue:hover { background-image: url(../images/icons/bug_add.png); }
-#main-menu li a.news,      #main-menu li a.news:hover      { background-image: url(../images/icons/newspaper.png); }
-#main-menu li a.documents, #main-menu li a.documents:hover { background-image: url(../images/icons/folder_page_white.png); }
-#main-menu li a.wiki,      #main-menu li a.wiki:hover      { background-image: url(../images/icons/page_world.png); }
-#main-menu li a.settings,  #main-menu li a.settings:hover  { background-image: url(../images/icons/cog.png); }
-
-
 /* Tables */
-table.list { border: none; }
+table.list { 
+	border: none; 
+	border-right: 1px dotted #EEE;
+}
 table.list th { background-color: #fff; }
-table.list tbody td, table.list tbody tr td { border-bottom: solid 1px #ddd; font-size: 11px; padding:4px 10px 4px 3px; }
+table.list tbody td, table.list tbody tr td { 
+	border-bottom: solid 1px #ddd; font-size: 11px; padding:4px 10px 4px 3px; 
+	border-left: 1px dotted #EEE;
+}
 table.list thead th {
 	border: none;
-	border-bottom:1px solid #999999;
-	font-size:9px;
-	font-weight:normal;
-	padding:0pt 3px 3px;
+	background: #FFF url(../images/table-hdr-back.png) repeat-x 0px 100%;
+	border: 1px solid #C9D5E0;
+	font-size: 9px;
+	font-weight: normal;
+	padding: 3px 3px 3px;
 	text-transform:uppercase;
 }
 
@@ -187,15 +201,6 @@ tr.even.priority-1 { background: #f2faff; }
 tr.priority-1 a { color: #559; }
 tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
 
-p.breadcrumb {
-	background-color:#EEEEEE;
-	border-bottom:1px solid white;
-	font-size:0.9em;
-	margin:-6px -10px 6px;
-	padding:6px;
-	text-indent:15px;
-}
-
 /* Fields */
 input[type="text"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
 input[type="text"] { padding: 4px; }
@@ -204,7 +209,10 @@ option { border-bottom: 1px dotted #d7d7d7; }
 input#issue_subject { font-size: 200%; width: 90%; }
 
 /* Misc */
-.box { background-color: #fcfcfc; }
+.box { 
+	background-color: #fcfcfc; 
+	border: 1px solid #E1E9F2;
+}
 
 .contextual { font-size: 11px; font-family:verdana; }
 
@@ -212,5 +220,31 @@ hr { background:#eee none repeat scroll 0% 0%; }
 
 #login-form table {
 	background: #FFF url(../images/login-back.png) repeat-x 0px 0px;
-	border: 1px solid #FFDDA8;
+	border: 1px solid #C9D5E0;
+}
+
+fieldset {
+	margin-top: 1em;
+	border: 1px solid #E1E9F2;
+	background-color: #FCFCFC;
+}
+
+legend {
+	background: #FFF url(../images/legend-back.png) repeat-x 0px 100%;
+}
+
+div.issue {
+	background-color: #FFFFF2;
+}
+
+div.issue > table td {
+	border-bottom: 1px dotted #DDD;
+}
+
+.todo {
+	border: none;
+}
+
+.journal > h4 {
+	border-bottom: 1px solid #E1E9F2;
 }
