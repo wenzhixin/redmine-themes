@@ -22,3 +22,4 @@
 
 /** plugins support */
 #main-menu li a.hudson,    #main-menu li a.hudson:hover    { background-image: url(../images/icons/server.png); }
+#main-menu li a.polls,  #main-menu li a.polls:hover  { background-image: url(../images/icons/tick.png); }
