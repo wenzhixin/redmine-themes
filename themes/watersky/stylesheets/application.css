@@ -273,3 +273,23 @@ table.progress td.closed {
 table.progress td.done {
 	background: #FFF url(../images/progress-done-back.png) repeat-x 0px 0px;
 }
+
+img.gravatar {
+  padding: 0px;
+}
+
+div.issue img.gravatar {
+   padding: 0px;
+}
+
+div.issue table img.gravatar {
+   padding: 0px;
+}
+
+h2 img.gravatar {
+   padding: 0px;
+}
+
+h4 img.gravatar {
+   padding: 0px;
+}
