@@ -7,6 +7,13 @@
     <%= content_tag('a', '', :name => "note-#{journal.indice}")%>
 		<%= authoring journal.created_on, journal.user, :label => :label_updated_time_by %></h4>
     
+
+
+
+
+
+
+
     <%= render_notes(issue, journal, :reply_links => reply_links) unless journal.notes.blank? %>
   </div>
   <%= call_hook(:view_issues_history_journal_bottom, { :journal => journal }) %>

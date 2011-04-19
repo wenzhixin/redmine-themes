@@ -1,5 +1,6 @@
 <div id="history_all">
 <% for journal in journals %>
+
   <div id="change-<%= journal.id %>" class="<%= journal.css_classes %>">
     <h4><div class="journal-link"><%= link_to "##{journal.indice}", :anchor => "note-#{journal.indice}" %></div>
     <%= avatar(journal.user, :size => "24") %>
@@ -13,8 +14,9 @@
       <% end %>
     </ul>
     <% end %>
-    <%= render_notes(issue, journal, :reply_links => reply_links) unless journal.notes.blank? %>
+
   </div>
   <%= call_hook(:view_issues_history_journal_bottom, { :journal => journal }) %>
+
 <% end %>
 </div>
