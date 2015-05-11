@@ -13,6 +13,7 @@ a:link, a:hover, a:active { color: #0F65BC; }
   background: #38628B url(../images/back.png) repeat-x scroll 0px 0px;
   padding: 4px 8px 0 8px; 
   height: 56px; 
+  min-height: 56px;
 }
 #header h1 { margin: 0; }
 #header #quick-search {
