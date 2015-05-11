@@ -10,7 +10,7 @@ a:link, a:hover, a:active { color: #0F65BC; }
 
 #header, #top-menu { margin: 0; }
 #header { 
-  background: #38628B url(../images/back.png) repeat-x scroll 0px 0px;
+  background: #38628B url(../images/back.png) repeat-x scroll 0 0;
   padding: 4px 8px 0 8px; 
   height: 56px; 
   min-height: 56px;
@@ -19,15 +19,15 @@ a:link, a:hover, a:active { color: #0F65BC; }
 #header #quick-search {
 	margin:  -8px -8px; 
 	padding: 7px 10px 2px 15px;
-	background: transparent url(../images/bg-srch.png) repeat-x scroll 0px 100%;
+	background: transparent url(../images/bg-srch.png) repeat-x scroll 0 100%;
 	height: 31px;
 }
 #top-menu { font-size: 10px; position: relative; padding: 0; height: 21px }
 #top-menu {   
-	background: #214B73 url(../images/top-back.png) repeat-x 0px 0px;
+	background: #214B73 url(../images/top-back.png) repeat-x 0 0;
 }
 
-#top-menu ul { padding: 0 0px; }
+#top-menu ul { padding: 0 0; }
 #top-menu li, #top-menu #loggedas { color: #ddd; line-height: 21px; margin-right: 4px; }
 #top-menu li a { color: #AAA; font-weight: normal; padding:4px 5px; }
 #top-menu li a:hover { color: #fff; text-decoration: none; }
@@ -41,7 +41,7 @@ a:link, a:hover, a:active { color: #0F65BC; }
 }
 
 #footer { 
-	background: #FFF url(../images/footer-back.png) repeat-x 0px 0px;
+	background: #FFF url(../images/footer-back.png) repeat-x 0 0;
 }
 
 #sidebar {
@@ -58,8 +58,8 @@ h1 {
 	font-family: verdana, arial, sans-serif; 
 	font-size: 22px; 
 	font-weight: normal; 
-	margin:0pt 0pt 0pt 0.25em; 
-	padding:0pt 0pt 10px; 
+	margin:0 0 0 0.25em;
+	padding:0 0 10px;
 	text-align:left; 
 }
 h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
@@ -67,12 +67,12 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 }
 
 #content > h2, .wiki > h1:first-child {
-	background: #F5F5F5 url(../images/header-back.png) repeat-x 0px 100%;
+	background: #F5F5F5 url(../images/header-back.png) repeat-x 0 100%;
 	padding: 4px 4px 6px 7px;
 	margin: -6px -10px 4px -10px;
 	font-size: 14px; 
 	color: #000; 
-	border-bottom: 0px;
+	border-bottom: 0;
 }
 
 #sidebar h1,
@@ -102,7 +102,7 @@ div.flash, .nodata {
 
 #content > div.flash {
 	margin: -6px -10px 6px -10px;
-	border: 0px solid #FFF;
+	border: 0 solid #FFF;
 }
 
 #content > div.notice {
@@ -116,11 +116,11 @@ div.flash, .nodata {
 
 /* Menu */
 #main-menu {
-	left: 0px;
+	left: 0;
 }
 
 #main-menu li:hover {
-  background: #5E82A8 url(../images/menu-back-h.png) repeat-x 0px 0px;
+  background: #5E82A8 url(../images/menu-back-h.png) repeat-x 0 0;
 }	
 
 /* Menu item common decoration */
@@ -131,8 +131,7 @@ div.flash, .nodata {
 #main-menu li a.selected:hover {
 	background-position: 2px 60%;
 	background-repeat: no-repeat;
-	padding-left: 22px;
-	padding: 5px 2px 4px 22px; 
+	padding: 5px 2px 4px 22px;
 	color: #111;
 	font-weight: normal; 
 	text-decoration: none; 
@@ -165,7 +164,7 @@ table.list tbody td, table.list tbody tr td {
 }
 table.list thead th {
 	border: none;
-	background: #FFF url(../images/table-hdr-back.png) repeat-x 0px 100%;
+	background: #FFF url(../images/table-hdr-back.png) repeat-x 0 100%;
 	border: 1px solid #C9D5E0;
 	font-size: 9px;
 	font-weight: normal;
@@ -179,33 +178,31 @@ table.list thead th a:hover { color: #000; }
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a { color: #333; }
 
-tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
-tr.odd.priority-5 { background: #ffc4c4; }
-tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
-tr.even.priority-5 { background: #ffd4d4; }
-tr.priority-5 a, tr.priority-5:hover a { color: #900; }
-tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
-
-tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover { color: #900; }
-tr.odd.priority-4 { background: #ffc4c4; }
-tr.even.priority-4, table.list tbody tr.even.priority-4:hover { color: #900; }
-tr.even.priority-4 { background: #ffd4d4; }
-tr.priority-4 a { color: #900; }
-tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #ffb4b4; }
-
-tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #900; }
-tr.odd.priority-3 { background: #fee; }
-tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #900; }
-tr.even.priority-3 { background: #fff2f2; }
-tr.priority-3 a { color: #900; }
-tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
-
-tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
-tr.odd.priority-1 { background: #eaf7ff; }
-tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
-tr.even.priority-1 { background: #f2faff; }
-tr.priority-1 a { color: #559; }
-tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
+tr.priority-7,
+tr.priority-6,
+tr.priority-5 {
+    font-weight:bold;
+}
+tr.priority-7 .id,
+tr.priority-7 .priority{
+    color: blueviolet;
+}
+tr.priority-6 .id,
+tr.priority-6 .priority{
+    color: #d9534f;
+}
+tr.priority-5 .id,
+tr.priority-5 .priority{
+    color: #d1761f;
+}
+tr.priority-4 .id,
+tr.priority-4 .priority{
+    color: #f0ad4e;
+}
+tr.priority-3 .id,
+tr.priority-3 .priority{
+    color: #aed2e8;
+}
 
 /* Fields */
 input[type="text"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
@@ -222,10 +219,10 @@ input#issue_subject { font-size: 200%; width: 90%; }
 
 .contextual { font-size: 11px; font-family:verdana; }
 
-hr { background:#eee none repeat scroll 0% 0%; }
+hr { background:#eee none repeat scroll 0 0; }
 
 #login-form table {
-	background: #FFF url(../images/login-back.png) repeat-x 0px 0px;
+	background: #FFF url(../images/login-back.png) repeat-x 0 0;
 	border: 1px solid #C9D5E0;
 }
 
@@ -236,7 +233,7 @@ fieldset {
 }
 
 legend {
-	background: #FFF url(../images/legend-back.png) repeat-x 0px 100%;
+	background: #FFF url(../images/legend-back.png) repeat-x 0 100%;
 }
 
 div.issue {
@@ -258,39 +255,39 @@ div.issue > table td {
 table.progress {
 	border: 1px solid #BBB;
 	height: 16px;
-	background: #FFF url(../images/progress-back.png) repeat-x 0px 0px;
+	background: #FFF url(../images/progress-back.png) repeat-x 0 0;
 }
 
 table.progress td.closed,
 table.progress td.done,
 table.progress td.todo {
-	border: 0px;
+	border: 0;
 }
 
 table.progress td.closed {
-	background: #FFF url(../images/progress-closed-back.png) repeat-x 0px 0px;
+	background: #FFF url(../images/progress-closed-back.png) repeat-x 0 0;
 }
 
 table.progress td.done {
-	background: #FFF url(../images/progress-done-back.png) repeat-x 0px 0px;
+	background: #FFF url(../images/progress-done-back.png) repeat-x 0 0;
 }
 
 img.gravatar {
-  padding: 0px;
+  padding: 0;
 }
 
 div.issue img.gravatar {
-   padding: 0px;
+   padding: 0;
 }
 
 div.issue table img.gravatar {
-   padding: 0px;
+   padding: 0;
 }
 
 h2 img.gravatar {
-   padding: 0px;
+   padding: 0;
 }
 
 h4 img.gravatar {
-   padding: 0px;
+   padding: 0;
 }
